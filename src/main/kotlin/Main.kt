@@ -1,5 +1,5 @@
 package io.github.amirisback
 
 fun main() {
-    showText("ABCDEFGHIJKLMNOPQRSTUVWQYZ")
+    runPrompt(PROMPT_SHUTDOWN_SET)
 }
