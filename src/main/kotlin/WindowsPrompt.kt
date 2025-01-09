@@ -1,5 +1,3 @@
-package io.github.amirisback
-
 fun runPrompt(rule: String) {
     Runtime.getRuntime().exec(rule)
 }
