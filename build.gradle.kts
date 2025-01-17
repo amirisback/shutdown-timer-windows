@@ -15,12 +15,6 @@ repositories {
     google()
 }
 
-
-dependencies {
-    testImplementation(kotlin("test"))
-    implementation(compose.desktop.currentOs)
-}
-
 tasks.test {
     useJUnitPlatform()
 }
@@ -47,4 +41,16 @@ compose.desktop {
             packageVersion = "1.0.0"
         }
     }
+}
+
+
+dependencies {
+    testImplementation(kotlin("test"))
+    implementation(compose.desktop.currentOs)
+    implementation(compose.ui)
+    implementation(compose.runtime)
+    implementation(compose.preview)
+    implementation(compose.uiTooling)
+    implementation(compose.material)
+    implementation(compose.materialIconsExtended)
 }
