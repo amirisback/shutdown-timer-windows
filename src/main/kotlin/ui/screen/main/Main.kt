@@ -34,10 +34,7 @@ fun App() {
                     Text(text)
                 }
 
-                Text(
-                    text = "Oke"
-                )
-
+                Text(text = "Oke")
                 Greeting(name = "Desktop")
 
             }
@@ -57,7 +54,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun main() = application {
     Window(
         title = "Shutdown Timer",
-        onCloseRequest = ::exitApplication) {
+        resizable = false,
+        onCloseRequest = ::exitApplication
+    ) {
         App()
     }
 }
