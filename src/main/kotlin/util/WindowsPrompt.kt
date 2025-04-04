@@ -1,3 +1,5 @@
+package util
+
 fun runPrompt(rule: String) {
     Runtime.getRuntime().exec(rule)
 }

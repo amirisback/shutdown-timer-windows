@@ -1,3 +1,5 @@
+package util
+
 var line1 = mutableListOf<String>()
 var line2 = mutableListOf<String>()
 var line3 = mutableListOf<String>()

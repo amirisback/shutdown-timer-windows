@@ -1,3 +1,5 @@
+package ui.screen.main
+
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -53,7 +55,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 fun main() = application {
-    Window(onCloseRequest = ::exitApplication) {
+    Window(
+        title = "Shutdown Timer",
+        onCloseRequest = ::exitApplication) {
         App()
     }
 }
