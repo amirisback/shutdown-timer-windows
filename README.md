@@ -31,13 +31,13 @@ compose.version=1.7.0
 
 ### Install apps on Release Page
 
-1. Go to [Release Page]()
+1. Go to [Release Page](https://github.com/amirisback/shutdown-timer-windows/releases)
 
 2. Download the latest release
 
 ## Installation
 
-1. Download the latest release from [Release Page]()
+1. Download the latest release from [Release Page](https://github.com/amirisback/shutdown-timer-windows/releases)
 2. install the app on your device
 3. Open the app
 
