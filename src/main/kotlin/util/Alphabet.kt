@@ -1,4 +1,4 @@
-package io.github.amirisback
+package util
 
 var line1 = mutableListOf<String>()
 var line2 = mutableListOf<String>()
