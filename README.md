@@ -3,43 +3,23 @@
 
 ### Tools
 - Intellij IDEA
-- Kotlin v 1.8.0
+
+### Libs
+```
+kotlin.version=2.0.21
+compose.version=1.7.0
+```
 
 ## Screen Shot
 ![ss](docs/image/ss-1.png?raw=true)
 
 ## How To Use
-### Step 1 : Create task on build.gradle.kts
-- Create Task and Register to build.gradle.kts like below
-- Sample Task Name : runMainKotlin
-- Detail [Click Here](https://github.com/amirisback/compile-run-kotlin-java-using-github-action/blob/master/build.gradle.kts)
-```kts
-tasks.register ("runMainKotlin", JavaExec::class.java) {
-    description = "Compile and Run Main Kotlin"
-    classpath = sourceSets["main"].runtimeClasspath
-    // note the addition of "Kt" on the end of the class name.
+### Install apps on Release Page
+1. Go to [Release Page]()
 
-    // package name
-    mainClass.set("io.github.amirisback.MainKt")
-}
-```
+2. Download the latest release
 
-### Step 2 : Add to CI.yml
-- Call the function that has been created in the build.gradle.kts file
-- Sample Function : runMainKotlin
-- Detail [Click Here](https://github.com/amirisback/compile-run-kotlin-java-using-github-action/blob/master/.github/workflows/ci.yml)
-```yml
-# Run main using gradle
-- name: Run Main
-  run: ./gradlew runMainKotlin
-```
-
-### Step 3 : Run On Github Action
-- Open Github Action On Github
-
-![ss](docs/image/ss-2.png?raw=true)
-
-## Colaborator
+## Contribute
 Very open to anyone, I'll write your name under this, please contribute by sending an email to me
 
 - Mail To faisalamircs@gmail.com

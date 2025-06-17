@@ -28,16 +28,16 @@ tasks.register ("runMainKotlin", JavaExec::class.java) {
     classpath = sourceSets["main"].runtimeClasspath
     // note the addition of "Kt" on the end of the class name.
 
-    mainClass.set("io.github.amirisback.MainKt")
+    mainClass.set("ui.screen.main.MainKt")
 }
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "ui.screen.main.MainKt"
 
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "demo"
+            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb, TargetFormat.Exe)
+            packageName = "shutdown-timer"
             packageVersion = "1.0.0"
         }
     }
